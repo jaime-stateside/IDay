@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+body {
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.main-container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    position: relative;
+}
+
+#gradient {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+}
