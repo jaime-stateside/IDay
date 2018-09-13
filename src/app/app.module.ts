@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
+import { MatRadioModule} from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -38,7 +40,9 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebase, 'ind-day-app'),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    FormsModule,
+    MatRadioModule
   ],
   providers: [
     AngularFireDatabase,
